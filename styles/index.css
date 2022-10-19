@@ -11,6 +11,9 @@
 --container-color:#FAFAFA;
 --container-color-alt:#F0EFEF;
 --body-color:#FCFCFC;
+--header-color:#2B2B2B;
+--header-text-color:#FCFCFC;
+--scroll-top-color: #edf598;
 
 /* -- Font ---*/
 --body-font:'Poppins', sans-serif;
@@ -46,6 +49,8 @@ body.dark-theme {
     --container-color:#212121;
     --container-color-alt:#181616;
     --body-color:#2B2B2B;
+    --header-color:#FCFCFC;
+    --header-text-color:#2B2B2B;
 }
 
 /* Theme Buttons */
@@ -232,7 +237,8 @@ img {
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: var(--header-color);
+    color: var(--header-text-color);
     box-shadow: 0 -1px 4px rgba(0,0,0,.1);
     transition: .3s;
 }
@@ -252,16 +258,16 @@ img {
         left: 0;
         width: 100%;
         padding: 2rem 1.5rem;
-        background-color: var(--body-color);
+        background-color: var(--header-color);
         box-shadow: 0 1px 4px rgba(0,0,0,.1);
-        border-radius: 1rem 1rem 0 0;
+        /*border-radius: 1rem 1rem 0 0;*/
         z-index: var(--z-fixed);
-        transition: .3s;
+        transition: .4s ease-in-out;
     }
 }
 
 .nav_logo, .nav_toggle {
-    color: var(--text-color);
+    color: var(--header-text-color);
     font-weight: var(--font-medium);
 }
 
@@ -284,7 +290,9 @@ img {
     display: flex;
     flex-direction: column;
     font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
+
+    color: var(--header-text-color);
+    /*color: var(--text-color-light);*/
     font-weight: var(--font-medium);
 }
 
@@ -497,7 +505,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0.3rem;
-    background-color: var(--container-color-alt);
+    background-color: var(--scroll-top-color);
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
@@ -505,7 +513,7 @@ img {
 
 .scrolltop_icon {
     font-size: 1.2rem;
-    color: var(--text-color);
+    color: var(--header--color);
 }
 
 .show-scroll{
