@@ -128,7 +128,7 @@ function removeScale() {
 let printableCv = document.getElementById("printable-resume");
 let resumeButton = document.getElementById("resume-button");
 let opt = {
-  margin: 2,
+  margin: 0,
   filename: "Aruna_Resume.pdf",
   image: { type: "jpeg", quality: 0.98 },
   html2canvas: { scale: 4 },
